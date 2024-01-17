@@ -10,6 +10,16 @@ public class User {
 
     private Integer age;
 
+    public User(Integer id, String name, String email, Address address, String phoneNumber, Integer age)
+    {
+        setUserId(id);
+        setName(name);
+        setEmail(email);
+        setAddress(address);
+        setPhoneNumber(phoneNumber);
+        setAge(age);
+    }
+
     public Integer getUserId() {
         return userId;
     }

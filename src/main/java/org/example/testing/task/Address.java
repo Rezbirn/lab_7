@@ -9,6 +9,16 @@ public class Address {
     private String street;
     private String building;
 
+    public Address(Integer addressId, Integer userId, String country, String city, String street, String building)
+    {
+        setAddressId(addressId);
+        setUserId(userId);
+        setCountry(country);
+        setCity(city);
+        setStreet(street);
+        setBuilding(building);
+    }
+
     public Integer getAddressId() {
         return addressId;
     }

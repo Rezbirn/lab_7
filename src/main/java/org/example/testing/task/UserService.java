@@ -7,6 +7,13 @@ public class UserService {
     private UserRepository userRepository;
     private AddressService addressService;
 
+
+    public UserService(UserRepository userRepository, AddressService addressService)
+    {
+        this.userRepository = userRepository;
+        this.addressService = addressService;
+    }
+
     public User getUser(Integer id) throws NoSuchProviderException {
         if (id == null) {
             throw new IllegalArgumentException("userId could not be null");
